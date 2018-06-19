@@ -1,0 +1,39 @@
+<configuration>
+	<Appenders>
+		<Console name="STDOUT">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+				</Pattern>
+			</PatternLayout>
+		</Console>
+		<File name="File"
+			fileName="C:\Hemant\EagerCrow.log">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+				</Pattern>
+			</PatternLayout>
+		</File>
+		 <File name="Test"
+			fileName="C:\Hemant\Test.log">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+				</Pattern>
+			</PatternLayout>
+		</File>
+	</Appenders>
+	<Loggers>
+		 <Logger name="com.eagercrow.automation.EagerCrow" level="debug" additivity="false">
+			<AppenderRef ref="STDOUT" />
+			<AppenderRef ref="File" />
+		</Logger> 
+		<Logger name="com.eagercrow.automation.QuickerWebSite" level="debug" additivity="false">
+			<AppenderRef ref="STDOUT" />
+			<AppenderRef ref="Test" />
+		</Logger>
+	</Loggers>
+	<root level = "info">
+		<AppenderRef ref="STDOUT" />
+		<AppenderRef ref="File" />
+		<AppenderRef ref="Test" />
+	</root>
+</configuration>
