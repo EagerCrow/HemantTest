@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7822" started-at="2018-06-09T10:04:02Z" finished-at="2018-06-09T10:04:10Z">
+  <suite name="Suite" duration-ms="44245" started-at="2018-06-19T13:28:49Z" finished-at="2018-06-19T13:29:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7822" started-at="2018-06-09T10:04:02Z" finished-at="2018-06-09T10:04:10Z">
-      <class name="com.eagercrow.automation.ImageUpload">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.eagercrow.automation.ImageUpload@42d80b78]" name="init" is-config="true" duration-ms="2695" started-at="2018-06-09T15:34:02Z" finished-at="2018-06-09T15:34:05Z">
+    <test name="Test" duration-ms="44245" started-at="2018-06-19T13:28:49Z" finished-at="2018-06-19T13:29:33Z">
+      <class name="com.eagercrow.automation.EagerCrow">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:com.eagercrow.automation.EagerCrow@750e2b97]" name="initializeDriver" is-config="true" duration-ms="3040" started-at="2018-06-19T18:58:49Z" finished-at="2018-06-19T18:58:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.eagercrow.automation.ImageUpload@42d80b78]" name="login" duration-ms="5109" started-at="2018-06-09T15:34:05Z" finished-at="2018-06-09T15:34:10Z">
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="signIn(java.lang.String, java.lang.String)[pri:0, instance:com.eagercrow.automation.EagerCrow@750e2b97]" name="signIn" duration-ms="19881" started-at="2018-06-19T18:58:52Z" data-provider="signInUsers" finished-at="2018-06-19T18:59:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tumbare27@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Vidyapeeth27!]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:com.eagercrow.automation.ImageUpload@42d80b78]" name="exit" is-config="true" duration-ms="0" started-at="2018-06-09T15:34:10Z" finished-at="2018-06-09T15:34:10Z">
+        </test-method> <!-- signIn -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.eagercrow.automation.EagerCrow@750e2b97]" name="closeDriver" is-config="true" duration-ms="102" started-at="2018-06-19T18:59:12Z" finished-at="2018-06-19T18:59:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- exit -->
-      </class> <!-- com.eagercrow.automation.ImageUpload -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:com.eagercrow.automation.EagerCrow@750e2b97]" name="initializeDriver" is-config="true" duration-ms="2135" started-at="2018-06-19T18:59:12Z" finished-at="2018-06-19T18:59:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="signIn(java.lang.String, java.lang.String)[pri:0, instance:com.eagercrow.automation.EagerCrow@750e2b97]" name="signIn" duration-ms="18990" started-at="2018-06-19T18:59:14Z" data-provider="signInUsers" finished-at="2018-06-19T18:59:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[eagercrowofficial@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password27!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.eagercrow.automation.EagerCrow@750e2b97]" name="closeDriver" is-config="true" duration-ms="66" started-at="2018-06-19T18:59:33Z" finished-at="2018-06-19T18:59:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.eagercrow.automation.EagerCrow -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
